@@ -1,18 +1,27 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Download, BarChart3, TrendingUp, Database } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import {
+  ArrowRight,
+  Download,
+  BarChart3,
+  TrendingUp,
+  Database,
+} from "lucide-react";
 
 export function Hero() {
   const scrollToProjects = () => {
-    const element = document.getElementById("projects")
+    const element = document.getElementById("projects");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-white">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-16 bg-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
           <div className="flex items-center justify-center mb-6">
@@ -25,9 +34,11 @@ export function Hero() {
               Hi, I'm <span className="text-blue-600">Poojitha</span>...
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Data Analyst skilled in Python, SQL, and Power BI, with experience transforming raw data into actionable
-              insights through dashboards and statistical analysis. Strong foundation in machine learning and passion
-              for solving business problems with data-driven decisions.
+              Data Analyst skilled in Python, SQL, and Power BI, with experience
+              transforming raw data into actionable insights through dashboards
+              and statistical analysis. Strong foundation in machine learning
+              and passion for solving business problems with data-driven
+              decisions.
             </p>
           </div>
 
@@ -56,20 +67,26 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button onClick={scrollToProjects} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
+            <Button
+              onClick={scrollToProjects}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
+            >
               View My Projects
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button
-              variant="outline"
-              className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg bg-transparent"
-            >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
-            </Button>
+
+            <a href="/Poojitha_Resume.pdf" download>
+              <Button
+                variant="outline"
+                className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg bg-transparent"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

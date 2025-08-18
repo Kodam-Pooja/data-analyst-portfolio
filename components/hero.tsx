@@ -67,6 +67,7 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            {/* Scroll to Projects Button */}
             <Button
               onClick={scrollToProjects}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
@@ -75,6 +76,7 @@ export function Hero() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
 
+            {/* Download Resume Button */}
             <a href="/Poojitha_Resume.pdf" download>
               <Button
                 variant="outline"

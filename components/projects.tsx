@@ -11,10 +11,21 @@ export function Projects() {
   const projects = [
     {
       title: "Impact of Sales in Weather Conditions Dashboard",
-      description: "...",
-      impact: "...",
-      achievements: ["..."],
-      technologies: ["..."],
+      description:
+        "Built an interactive dashboard analyzing how temperature and rainfall affect product-wise and regional sales trends. Detected seasonal peaks (+18% in Q4) and weather-related dips (-12% during heavy rainfall), enabling smarter inventory decisions.",
+      impact: "Informed stock planning and weather-based promotions",
+      achievements: [
+        "18% seasonal peak identification",
+        "12% weather impact analysis",
+        "Multi-regional sales tracking",
+      ],
+      technologies: [
+        "Python",
+        "Power BI",
+        "Pandas",
+        "Statistical Analysis",
+        "Data Visualization",
+      ],
       category: "Dashboard Development",
       image: "/weather-sales-dashboard.png",
       github:
@@ -22,20 +33,38 @@ export function Projects() {
     },
     {
       title: "Shark Tank India Data Analysis",
-      description: "...",
-      impact: "...",
-      achievements: ["..."],
-      technologies: ["..."],
+      description:
+        "Comprehensive analysis of investment patterns, shark preferences, and industry trends across multiple seasons. Visualized shark-wise and industry-wise investment trends, analyzed deal patterns and funding distribution.",
+      impact:
+        "Improved understanding of investor preferences for strategic pitch planning",
+      achievements: [
+        "Multi-season trend analysis",
+        "Investor pattern recognition",
+        "Industry-wise funding insights",
+      ],
+      technologies: [
+        "Python",
+        "Matplotlib",
+        "Seaborn",
+        "Pandas",
+        "Data Mining",
+      ],
       category: "Business Analytics",
       image: "/investment-analytics-dashboard.png",
       github: "https://github.com/Poojitha-Kodam/Shark-Tank-India-Analysis",
     },
     {
       title: "SuperStore Sales Analysis",
-      description: "...",
-      impact: "...",
-      achievements: ["..."],
-      technologies: ["..."],
+      description:
+        "In-depth analysis of sales performance, discount strategies, and profit optimization across different categories and regions. Created comprehensive dashboards for business insights and loss identification.",
+      impact:
+        "Helped identify underperforming areas and optimized pricing and shipping strategies",
+      achievements: [
+        "Regional performance analysis",
+        "Category-wise profit optimization",
+        "Discount impact assessment",
+      ],
+      technologies: ["Python", "Power BI", "Excel", "Statistical Analysis"],
       category: "Business Analytics",
       image: "/superstore-sales-dashboard-dark.png",
       github: "https://github.com/Poojitha-Kodam/SuperStore-Sales-Analysis",

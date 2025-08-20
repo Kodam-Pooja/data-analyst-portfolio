@@ -58,10 +58,13 @@ export function Projects() {
     <section id="projects" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-4">Projects</h2>
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-4">
+            Projects
+          </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore my data analysis projects that demonstrate practical application of statistical analysis,
-            visualization, and business intelligence to solve real-world problems.
+            Explore my data analysis projects that demonstrate practical
+            application of statistical analysis, visualization, and business
+            intelligence to solve real-world problems.
           </p>
         </div>
 
@@ -83,7 +86,10 @@ export function Projects() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {filteredProjects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <Card
+              key={index}
+              className="overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
               <div className="relative">
                 <img
                   src={project.image || "/placeholder.svg"}
@@ -98,19 +104,30 @@ export function Projects() {
               </div>
 
               <CardContent className="p-6">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-3">{project.title}</h3>
-                <p className="font-body text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                <h3 className="font-heading text-xl font-bold text-foreground mb-3">
+                  {project.title}
+                </h3>
+                <p className="font-body text-muted-foreground mb-4 leading-relaxed">
+                  {project.description}
+                </p>
 
                 <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-4">
-                  <h4 className="text-blue-600 font-semibold text-sm mb-1">Business Impact</h4>
+                  <h4 className="text-blue-600 font-semibold text-sm mb-1">
+                    Business Impact
+                  </h4>
                   <p className="text-gray-700 text-sm">{project.impact}</p>
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="text-foreground font-semibold text-sm mb-2">Key Achievements</h4>
+                  <h4 className="text-foreground font-semibold text-sm mb-2">
+                    Key Achievements
+                  </h4>
                   <ul className="space-y-1">
                     {project.achievements.map((achievement, i) => (
-                      <li key={i} className="flex items-center text-sm text-muted-foreground">
+                      <li
+                        key={i}
+                        className="flex items-center text-sm text-muted-foreground"
+                      >
                         <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                         {achievement}
                       </li>
@@ -119,25 +136,36 @@ export function Projects() {
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="text-foreground font-semibold text-sm mb-2">Technologies Used</h4>
+                  <h4 className="text-foreground font-semibold text-sm mb-2">
+                    Technologies Used
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
-                      <span key={i} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
+                      <span
+                        key={i}
+                        className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
+                      >
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white">
-                  <Github className="h-4 w-4 mr-2" />
-                  Source Code
-                </Button>
+                <a
+                  href="https://github.com/Poojitha-Kodam/Influence-of-sales-in-weather-conditions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white">
+                    <Github className="h-4 w-4 mr-2" />
+                    Source Code
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

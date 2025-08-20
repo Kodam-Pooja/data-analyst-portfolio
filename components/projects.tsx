@@ -1,58 +1,58 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Github } from "lucide-react"
-import { useState } from "react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
+import { useState } from "react";
 
 export function Projects() {
-  const [activeFilter, setActiveFilter] = useState("All")
+  const [activeFilter, setActiveFilter] = useState("All");
 
   const projects = [
     {
       title: "Impact of Sales in Weather Conditions Dashboard",
-      description:
-        "Built an interactive dashboard analyzing how temperature and rainfall affect product-wise and regional sales trends. Detected seasonal peaks (+18% in Q4) and weather-related dips (-12% during heavy rainfall), enabling smarter inventory decisions.",
-      impact: "Informed stock planning and weather-based promotions",
-      achievements: [
-        "18% seasonal peak identification",
-        "12% weather impact analysis",
-        "Multi-regional sales tracking",
-      ],
-      technologies: ["Python", "Power BI", "Pandas", "Statistical Analysis", "Data Visualization"],
+      description: "...",
+      impact: "...",
+      achievements: ["..."],
+      technologies: ["..."],
       category: "Dashboard Development",
       image: "/weather-sales-dashboard.png",
+      github:
+        "https://github.com/Poojitha-Kodam/Influence-of-sales-in-weather-conditions",
     },
     {
       title: "Shark Tank India Data Analysis",
-      description:
-        "Comprehensive analysis of investment patterns, shark preferences, and industry trends across multiple seasons. Visualized shark-wise and industry-wise investment trends, analyzed deal patterns and funding distribution.",
-      impact: "Improved understanding of investor preferences for strategic pitch planning",
-      achievements: ["Multi-season trend analysis", "Investor pattern recognition", "Industry-wise funding insights"],
-      technologies: ["Python", "Matplotlib", "Seaborn", "Pandas", "Data Mining"],
+      description: "...",
+      impact: "...",
+      achievements: ["..."],
+      technologies: ["..."],
       category: "Business Analytics",
       image: "/investment-analytics-dashboard.png",
+      github: "https://github.com/Poojitha-Kodam/Shark-Tank-India-Analysis",
     },
     {
       title: "SuperStore Sales Analysis",
-      description:
-        "In-depth analysis of sales performance, discount strategies, and profit optimization across different categories and regions. Created comprehensive dashboards for business insights and loss identification.",
-      impact: "Helped identify underperforming areas and optimized pricing and shipping strategies",
-      achievements: [
-        "Regional performance analysis",
-        "Category-wise profit optimization",
-        "Discount impact assessment",
-      ],
-      technologies: ["Python", "Power BI", "Excel", "Statistical Analysis"],
+      description: "...",
+      impact: "...",
+      achievements: ["..."],
+      technologies: ["..."],
       category: "Business Analytics",
       image: "/superstore-sales-dashboard-dark.png",
+      github: "https://github.com/Poojitha-Kodam/SuperStore-Sales-Analysis",
     },
-  ]
+  ];
 
-  const categories = ["All", "Dashboard Development", "Business Analytics", "Business Intelligence"]
+  const categories = [
+    "All",
+    "Dashboard Development",
+    "Business Analytics",
+    "Business Intelligence",
+  ];
 
   const filteredProjects =
-    activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
+    activeFilter === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section id="projects" className="py-20 bg-background">
@@ -152,7 +152,7 @@ export function Projects() {
                 </div>
 
                 <a
-                  href="https://github.com/Poojitha-Kodam/Influence-of-sales-in-weather-conditions"
+                  href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

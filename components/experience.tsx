@@ -68,7 +68,7 @@ export function Experience() {
                     <h4 className="text-lg font-bold text-gray-900">
                       Deloitte Data Analytics Certification
                     </h4>
-                    <span className="text-blue-600 font-medium">2024</span>
+                    <span className="text-blue-600 font-medium">2025</span>
                   </div>
                   <p className="text-blue-600 font-medium mb-2">Deloitte</p>
                   <p className="text-sm text-gray-600">
@@ -87,7 +87,7 @@ export function Experience() {
                     <h4 className="text-lg font-bold text-gray-900">
                       Code Unnati
                     </h4>
-                    <span className="text-blue-600 font-medium">2024</span>
+                    <span className="text-blue-600 font-medium">2025</span>
                   </div>
                   <p className="text-blue-600 font-medium mb-2">
                     Course Completion
@@ -98,7 +98,7 @@ export function Experience() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-blue-50 border-blue-200">
+              {/* <Card className="bg-blue-50 border-blue-200">
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="text-lg font-bold text-gray-900">
@@ -114,7 +114,7 @@ export function Experience() {
                     Foundation course in data science and analytics.
                   </p>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>

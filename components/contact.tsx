@@ -28,14 +28,14 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "#",
+      href: "https://github.com/Poojitha-Kodam/",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/poojithakodam93",
     },
-  ]
+  ];
 
   return (
     <section id="contact" className="py-20 bg-slate-900 text-white">
